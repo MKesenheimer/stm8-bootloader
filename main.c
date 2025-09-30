@@ -12,7 +12,7 @@ static volatile uint8_t RAM_SEG_LEN;
 static void (*flash_write_block)(uint16_t addr, const uint8_t *buf) =
         (void (*)(uint16_t, const uint8_t *)) f_ram1;
 static void (*write_rop_byte)(uint16_t addr, const uint8_t opt) =
-        (void (*)(uint16_t, const uint8_t)) f_ram1;
+        (void (*)(uint16_t, const uint8_t)) f_ram2;
 
 /**
  * Write RAM_SEG section length into RAM_SEG_LEN
